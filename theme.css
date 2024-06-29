@@ -1,0 +1,175 @@
+:root, :host {
+	--color-primary: #F6423B;
+	--color-secondary: #72727E;
+	--color-accent: #18181b;
+	--text-primary: black;
+	--text-secondary: #71717a;
+	--color-logs-error: #f87171;
+	--color-logs-success: #4ade80;
+	--color-logs-stopped: #facc15;
+	--color-card: white;
+	--color-border: #e4e4e7;
+	--color-bg: #858597;
+	--color-btn-default: rgba(0, 0, 0, 0.05);
+	--color-btn-default-text: black;
+	--color-btn-primary: #F6583B;
+	--color-hover: rgba(0, 0, 0, 0.05);
+	--color-btn-primary-text: white;
+	--color-input-primary: rgba(0, 0, 0, 0.05);
+	--color-input-secondary: rgba(0, 0, 0, 0.1);
+}
+
+body, :host {
+	font-size: 16px;
+	font-family: "Inter var", sans-serif;
+	color: var(--text-primary);
+	background-color: var(--color-bg);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+*, ::before, ::after {
+	border-color: var(--color-border) !important;
+}
+
+.ui-popover__trigger {
+		line-height: 1;
+	}
+
+.ui-popover__content {
+	border-radius: 8px;
+	border-width: 1px;
+	padding: 16px;
+		background-color: var(--color-card);
+		box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.ui-switch {
+	background-color: var(--color-input-primary);
+	transition: background-color 250ms ease;
+}
+
+.ui-switch:hover, .ui-switch:focus {
+		background-color: var(--color-input-secondary);
+	}
+
+.ui-switch:focus {
+		outline: none;
+	}
+
+.ui-input {
+	display: inline-block;
+}
+
+.ui-input__content {
+	position: relative;
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+.ui-input__label {
+		color: var(--text-secondary);
+		margin-left: 4px;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 20px;
+		line-height: 1;
+	}
+
+.ui-input__prepend-icon {
+		color: var(--text-secondary);
+		position: absolute;
+		left: 0px;
+		margin-left: 8px;
+	}
+
+.ui-input input {
+	width: 100%;
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+		background-color: var(--color-input-primary);
+		transition: background-color 250ms ease;
+}
+
+.ui-input input:hover, .ui-input input:focus {
+			background-color: var(--color-input-secondary);
+		}
+
+.ui-input input:focus {
+			outline: none;
+		}
+
+.ui-input input.disabled {
+	pointer-events: none;
+	opacity: 0.75;
+}
+
+.ui-input input.with-icon {
+	padding-left: 40px;
+}
+
+.ui-button {
+	border-radius: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.ui-button.icon {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.ui-list__item {
+		display: flex;
+		align-items: center;
+		transition: background-color 250ms ease;
+		border-radius: 8px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+
+.ui-list__item:hover {
+			background-color: var(--color-hover);
+		}
+
+.ui-button {
+	transition: background-color 250ms ease;
+  position: relative;
+  height: 40px;
+  color: var(--color-btn-default-text);
+  background-color: var(--color-btn-default);
+}
+
+.ui-button.primary {
+  	color: var(--color-btn-primary-text);
+  	background-color: var(--color-btn-primary);
+  }
+
+.ui-card {
+	background-color: var(--color-card);
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.text-secondary {
+	color: var(--text-secondary);
+}
+
+.tippy-box[data-theme~='tooltip-theme'] {
+  background-color: var(--color-card);
+  border-radius: 6px;
+  border-width: 2px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  line-height: 20px;
+}

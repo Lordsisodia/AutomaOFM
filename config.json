@@ -1,0 +1,118 @@
+{
+    "customScript": {
+        "popup": {
+            "preloadScripts": [],
+            "script": "",
+            "style": ""
+        }
+    },
+    "layout": [
+        {
+            "component": "GridComponentImage",
+            "data": {
+                "altText": "{{app.name}} logo",
+                "customStyle": "$element {\n\n}",
+                "events": [],
+                "hidden": false,
+                "objectFit": "contain",
+                "src": "{{app.logo}}"
+            },
+            "h": 5,
+            "i": 0,
+            "itemId": "image0",
+            "minW": 2,
+            "name": "Image",
+            "nameId": "image",
+            "w": 4,
+            "x": 1,
+            "y": 2
+        },
+        {
+            "component": "GridComponentText",
+            "data": {
+                "customStyle": "$element h3 {\n  margin: 0;\n}",
+                "horizontalAlign": "left",
+                "text": "### {{app.name}}",
+                "textType": "markdown",
+                "verticalAlign": "center"
+            },
+            "h": 5,
+            "i": 1,
+            "itemId": "text1",
+            "minW": 2,
+            "name": "Text",
+            "nameId": "text",
+            "w": 15,
+            "x": 5,
+            "y": 2
+        },
+        {
+            "component": "GridComponentInput",
+            "data": {
+                "customStyle": "$element {\n\n}",
+                "defaultValue": "",
+                "events": [],
+                "hidden": "",
+                "label": "",
+                "placeholder": "Search workflows....",
+                "prependIcon": "riSearch2Line",
+                "type": "text"
+            },
+            "h": 5,
+            "i": 2,
+            "itemId": "input2",
+            "maxH": 5,
+            "minH": 5,
+            "minW": 2,
+            "name": "Input",
+            "nameId": "input",
+            "w": 22,
+            "x": 1,
+            "y": 9
+        },
+        {
+            "component": "GridComponentWorkflowsList",
+            "data": {
+                "customStyle": "$element {\n\n}",
+                "display": "list",
+                "gridColumn": 2,
+                "gridGap": 8,
+                "hidden": "",
+                "query": "{{comps.input2.value}}",
+                "scrollable": false
+            },
+            "h": 42,
+            "i": 3,
+            "itemId": "workflowsList3",
+            "minW": 2,
+            "name": "Workflows List",
+            "nameId": "workflowsList",
+            "w": 22,
+            "x": 1,
+            "y": 16
+        }
+    ],
+    "theme": {
+        "colors": {
+            "accent": "#18181b",
+            "background": "#f4f4f5",
+            "borderColor": "#e4e4e7",
+            "btnDefault": "rgba(0, 0, 0, 0.05)",
+            "btnDefaultText": "black",
+            "btnPrimary": "#3b82f6",
+            "btnPrimaryText": "white",
+            "cardColor": "white",
+            "hoverColor": "rgba(0, 0, 0, 0.05)",
+            "inputPrimary": "rgba(0, 0, 0, 0.05)",
+            "inputSecondary": "rgba(0, 0, 0, 0.1)",
+            "primary": "#3b82f6",
+            "secondary": "#52525b",
+            "textPrimary": "black",
+            "textSecondary": "#71717a"
+        }
+    },
+    "workflowsShortcut": {
+        "enable": true,
+        "keys": "mod+shift+e"
+    }
+}
