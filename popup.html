@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title></title>
+    <title>AutomaOFM</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="style.css">
@@ -11,20 +11,21 @@
 </head>
 <body>
     <div id="branding">
-        <img src="path_to_your_logo.png" alt="Your Logo">
+        <img src="icon-128.png" alt="Your Logo">
     </div>
-    <div id="app"></div>
-    <div id="features">
-        <!-- Existing features here -->
-    </div>
-    <div id="payment-section">
-        <a href="https://buy.stripe.com/7sI4jufvCanV0WQ000" id="pay-link">Upgrade for more features</a>
-    </div>
-    <div id="membership-section">
-        <a href="https://sisoinnovatorshub.io/" id="membership-link">Become a Member</a>
-    </div>
-    <div id="blog-section">
-        <a href="https://sisoinnovatorshub.io/blog-2/" id="blog-link">Visit our Blog</a>
+    <div id="container">
+        <div id="sidebar">
+            <a href="https://buy.stripe.com/7sI4jufvCanV0WQ000" id="pay-link">Upgrade for more features</a>
+            <a href="https://your-website.com" id="website-link">Visit Website</a>
+            <a href="https://your-membership-page.com" id="membership-link">Become a Member</a>
+            <a href="https://your-documentation.com" id="docs-link">Documentation</a>
+        </div>
+        <div id="content">
+            <div id="app"></div>
+            <div id="features">
+                <!-- Existing features here -->
+            </div>
+        </div>
     </div>
     <iframe src="/sandbox.html" id="sandbox" style="display: none;"></iframe>
     <script src="popup.js"></script>
